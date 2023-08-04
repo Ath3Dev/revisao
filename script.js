@@ -1,34 +1,33 @@
-/* Criar váriaveis */
+//Criar variaveis
 
-/* let nome = "Arthur Cuidado" */
-let idade = 37
-let idadeEsposa = "37"
-const anoNascimento = 1879
+//let nome = "Samuel Santos"
+let idade = 45
+let idadeEsposa = "45"
+const anoNascimento = 1977
 
-/* decisão */
+// decisão
 
 if (idade === idadeEsposa) {
-    /* alert("igual....") */
+    //  alert("Igual...")
 } else {
-    /* alert("renato augusto") */
+    //  alert("Cada um no seu quadrado!")
 }
 
-/* Lendo informações do HTML */
+// Lendo informações do HTML
 
 const titulo = document.getElementById("titulo")
+const resultado = document.getElementById("resultado")
+
 const nome = document.getElementById("nome")
 const email = document.getElementById("email")
 
-titulo.textContent = "Mudei o Titulo!!"
-
-titulo.style.color = "orange"
-titulo.style.backgroundColor = "black"
-titulo.style.borderRadius = "10px"
-titulo.style.padding = "10px"
-titulo.style.textAlign = "center"
-
-body.style.textAlign = "center"
+titulo.textContent = "Mudei o titulo!! Eu posso..."
 
 function mostrarResultado() {
-    mostrarResultado.textContent = nome.value + " " + email.value
+    titulo.style.color = "#CF00FA"
+    titulo.style.backgroundColor = "blue"
+    titulo.style.borderRadius = "10px"
+    titulo.style.padding = "10px"
+
+    resultado.textContent = nome.value + " " + email.value
 }
