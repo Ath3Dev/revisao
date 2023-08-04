@@ -2,7 +2,7 @@ const n1 = document.getElementById("number1")
 const n2 = document.getElementById("number2")
 const result = document.getElementById("resultado")
 
-function somar() {
+/* function somar() {
     resultado.textContent = Number(n1.value) + Number(n2.value)
 }
 
@@ -16,7 +16,7 @@ function dividir() {
 
 function multiplicar() {
     resultado.textContent = Number(n1.value) * Number(n2.value)
-}
+} */
 
 //Forma diferente de fazer
 /* function calculo(params){
@@ -32,3 +32,10 @@ function multiplicar() {
         alert("Não reconheço esta operação!")
     }
 } */
+
+function calculo(params){
+    let valor = eval('Number(n1.value)' + params + 'Number(n2.value)')
+
+    resultado.textContent = valor
+
+}
