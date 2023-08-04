@@ -5,36 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
 </head>
 
 <body>
 
-    Primeiro Número: <input id="number1" type="number">
-    Segundo Número: <input id="number2" type="number">
-
-    <!-- <div class="operacoes">
-        <button onclick="somar()">Somar</button>
-        <button onclick="subtrair()">Subtrair</button>
-        <button onclick="dividir()">Dividir</button>
-        <button onclick="multiplicar()">Multiplicar</button>
-    </div> -->
-
-    <!-- Forma diferente de fazer --> ''
-    <!-- <div class="operacoes">
-        <button onclick="calculo('somar')">Somar</button>
-        <button onclick="calculo('subtrair')">Subtrair</button>
-        <button onclick="calculo('dividir')">Dividir</button>
-        <button onclick="calculo('multiplicar')">Multiplicar</button>
-    </div> -->
-
-    <div class="operacoes">
-        <button onclick="calculo('+')">Somar</button>
-        <button onclick="calculo('-')">Subtrair</button>
-        <button onclick="calculo('/')">Dividir</button>
-        <button onclick="calculo('*')">Multiplicar</button>
-    </div>
-
-    <h2>O resultado desta operação é igual à: <span id="resultado"></span></h2>
+    <main>
+        <div class="entrada">
+            Primeiro Número: <input id="number1" type="number">
+            Segundo Número: <input id="number2" type="number">
+        </div>
+        <!-- <div class="operacoes">
+            <button onclick="somar()">Somar</button>
+            <button onclick="subtrair()">Subtrair</button>
+            <button onclick="dividir()">Dividir</button>
+            <button onclick="multiplicar()">Multiplicar</button>
+        </div> -->
+        <!-- Forma diferente de fazer -->
+        <!-- <div class="operacoes">
+            <button onclick="calculo('somar')">Somar</button>
+            <button onclick="calculo('subtrair')">Subtrair</button>
+            <button onclick="calculo('dividir')">Dividir</button>
+            <button onclick="calculo('multiplicar')">Multiplicar</button>
+        </div> -->
+        <div class="operacoes">
+            <button onclick="calculo('+')">Somar</button>
+            <button onclick="calculo('-')">Subtrair</button>
+            <button onclick="calculo('/')">Dividir</button>
+            <button onclick="calculo('*')">Multiplicar</button>
+        </div>
+        <h2>O resultado desta operação é igual à: <span id="resultado"></span></h2>
+    </main>
 
     <script src="calculadora.js"></script>
 </body>
